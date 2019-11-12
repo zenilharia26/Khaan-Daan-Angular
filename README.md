@@ -1,4 +1,4 @@
-# AngularApp
+# Khaan Daan Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+#### This project still has scope of development, so you can also contribute to this Project as follows:
+* [Fork](https://github.com/zenilharia26/Khaan-Daan-Angular) this Repository.
+* Clone your Fork on a different branch:
+	* `git clone -b <name-of-branch> https://github.com/zenilharia26/Khaan-Daan-Angular.git`
+* After adding any feature:
+	* Goto your fork and create a pull request.
+	* We will test your modifications and merge changes.
+
+This project was done `as a part of our Web Technology Lab experiment on Angular 8.`
+
+---
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/zenilharia26">Zenil Haria</a>, <a href="https://github.com/arghyadeep99">Arghyadeep Das</a> and <a href="https://github.com/adityak14">Aditya Kaushik</a>.</b></h1>
