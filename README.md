@@ -1,5 +1,7 @@
 # Khaan Daan Angular
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dac9817a-4af8-43d0-847d-87506299d747/deploy-status)](https://app.netlify.com/sites/khaandaan/deploys)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
 ## Development server
