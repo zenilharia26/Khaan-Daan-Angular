@@ -15,18 +15,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Pav Bhaji</td>
-                            <td>4.5</td>
-                            <td>Shiv Sagar</td>
-                            <td>Submit</td>
-                        </tr>
-
-                        <tr>
-                            <td>Chole Bhature</td>
-                            <td>5.4</td>
-                            <td>Bhagat Tarachand</td>
-                            <td>Submit</td>
+                        <tr *ngFor="let food of food_list">
+                            <td>{{ food.name }}</td>
+                            <td>{{ food.quantity }}</td>
+                            <td>{{ food.restaurant }}</td>
+                            <td><button type="submit" (click)="addFood($event, food)">ADD</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -37,12 +30,11 @@
     <div class="card" style="width: 30%; margin: 1%;">
         <div class="card-body">
             <h6 class="card-title" align="center">Food Detail</h6>
-            <div class="container">
-                <p>Food Name: </p>
-                <p>Quantity: </p>
-                <p>Restaurant: </p>
-                <p>Contact: </p>
-                <p>Order</p>
+            <div class="container"  *ngIf="added">
+                <p>Food Name: {{ confirm_order_food.name }}</p>
+                <p>Quantity: {{ confirm_order_food.quantity }}</p>
+                <p>Restaurant: {{ confirm_order_food.restaurant }}</p>
+                <button type="submit" (click)="confirm($event)">Confirm Order</button>
             </div>
         </div>
     </div>
@@ -53,6 +45,24 @@
         <div class="card-body">
             <h6 class="card-title"> Transactions </h6>
             <p class="card-subtitle"> All your ordered food appears here.</p>
+            <div class="container">
+                <table class="table table-hover" *ngIf="confirmed">
+                    <thead>
+                        <tr>
+                            <th>Food Name</th>
+                            <th>Quantity</th>
+                            <th>Restaurant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let food of confirm_food_list">
+                            <td>{{ food.name }}</td>
+                            <td>{{ food.quantity }}</td>
+                            <td>{{ food.restaurant }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
