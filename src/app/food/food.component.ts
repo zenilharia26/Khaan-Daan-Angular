@@ -16,7 +16,9 @@ export class FoodComponent implements OnInit {
     this.confirm_order_food = {
       name : '',
       quantity : 0.0,
-      restaurant : ''
+      restaurant : '',
+      location:'',
+      contact:''
     }
     this.added = false;
   }
@@ -25,7 +27,9 @@ export class FoodComponent implements OnInit {
     this.confirm_order_food = {
       name : food.name,
       quantity : food.quantity,
-      restaurant : food.restaurant
+      restaurant : food.restaurant,
+      location : food.location,
+      contact : food.contact
     };
     this.added = true;
   }
@@ -46,11 +50,43 @@ export class FoodComponent implements OnInit {
         name:'Pav Bhaji',
         quantity:3.5,
         restaurant:'Shiv Sagar',
+        contact: '022-27556546',
+        location: 'Vidyavihar',
       },
       {
         name:'Chole Bhature',
         quantity:6.9,
         restaurant:'Bhagat Tarachand',
+        contact: '022-27556789',
+        location: 'Mulund',
+      },
+      {
+        name:'Dal Makhani',
+        quantity:2.7,
+        restaurant:'Utsav',
+        contact: '022-27559067',
+        location: 'Thane(West)',
+      },
+      {
+        name:'Aloo Fry',
+        quantity:3.8,
+        restaurant:'The Food Studio',
+        contact: '022-27547634',
+        location: 'Ghatkopar(East)',
+      },
+      {
+        name:'Paalak Paneer',
+        quantity:4.6,
+        restaurant:'Kailash Parbat',
+        contact: '022-27650987',
+        location: 'Seawoods',
+      },
+      {
+        name:'Veg Pulav',
+        quantity:5.1,
+        restaurant:'Navratna',
+        contact: '022-27532314',
+        location: 'Vashi',
       }
     ];
     this.confirm_food_list = [];
